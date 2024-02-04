@@ -49,7 +49,7 @@ a:hover, a:focus, a:active {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
   margin-top: 10px;
   padding: 10px 10px 10px 10px;
@@ -78,7 +78,7 @@ a:hover, a:focus, a:active {
   flex-direction: row;
   align-items: flex-start;
   align-self: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
   padding: 0px;
   border-radius: 15px;
@@ -86,8 +86,7 @@ a:hover, a:focus, a:active {
 
 .sidebarMid p {
   background-color: #FBD861;
-  margin-left: -8px;
-  margin-right: 30px;
+  margin: 10px 0px 10px 0px;
   padding: 12px 25px 12px 25px;
   border-radius: 10px;
   color: #0D7E70;
@@ -112,23 +111,83 @@ a:hover, a:focus, a:active {
   flex-direction: column;
   align-items: start;
   justify-content:flex-start;
-  border: 1px solid #000;
-  padding: 10px;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   background-color: #D2FFBE;
   flex-shrink: 0;
   border-radius: 15px 15px 0px 0px;
+  height: 100vh;
 }
 
 /* This is the code for the top of the collection section */
+.col {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
 
+.colTop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 40px 0px 0px 40px;
+  padding: 0px;
+}
 
+.colTop h3{
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+}
 
+.colTop h2 {
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  font-size: 40px;
+  color: #0D7E70;
+}
 
+.colTopP {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
 
+}
+.colTop p {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 0px 0px 0px;
+  font-size: 20px;
+}
 
+.topPvalue {
+  color: #D2FFBE;
+  font-size: 20px;
+  background-color: #36353550;
+  border-radius: 5px;
+  padding: 2px;
+}
 
+/* This is the code for the colRight section */
+.colRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 10px 10px 10px 0px;
+  padding: 0px;
+  font-size: 12px;
+}
 
+/* End of ColTop */
 
 .collection li {
   list-style: none;
@@ -141,7 +200,7 @@ a:hover, a:focus, a:active {
 }
 
 .collectionNav li {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 /* This is the line that appears under the details links */
@@ -152,13 +211,19 @@ a:hover, a:focus, a:active {
   width: calc(100% - 70px);
   bottom: -15px;
   height: 4px;
-  background-color: #0D7E70;
+  background-color: #0D7E7050;
 }
 
 /*This is for the collectionMid section*/
 .collectionMid {
 display: flex;
+flex-direction: row;
+align-items: space-between;
 position: relative;
+width: 100%;
+flex-wrap: wrap;
+Margin: 20px 0px 20px 0px;
+padding: 0px;
 }
 
 /* This is for the collectionMid section underline */
@@ -166,10 +231,10 @@ position: relative;
   content: "";
   position: absolute;
   left: 10px; 
-  width: 100%;
+  width: calc(100% - 70px);
   bottom: -15px;
   height: 4px;
-  background-color: #0D7E70;
+  background-color: #0D7E7050;
 
 }
 
